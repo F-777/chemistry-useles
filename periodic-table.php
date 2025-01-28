@@ -7,7 +7,7 @@ $elements = [
     ["K", 1, 4], ["Ca", 2, 4], ["Sc", 3, 4], ["Ti", 4, 4], ["V", 5, 4], ["Cr", 6, 4], ["Mn", 7, 4], ["Fe", 8, 4],
     ["Co", 9, 4], ["Ni", 10, 4], ["Cu", 11, 4], ["Zn", 12, 4], ["Ga", 13, 4], ["Ge", 14, 4], ["As", 15, 4], ["Se", 16, 4],
     ["Br", 17, 4], ["Kr", 18, 4],["Xe", 18,5],["Po", 16,6],["Rn", 18,6],["Fr", 1,7],["Ra", 2,7],["Og",18,7],["89-103",3,7],["Bi",15,6],["Ac",4,10],["U",7,10],["Np",8,10],["Pu",9,10],
-    ["Es",14,10],["Pb",14,6],["Hg",12,6],["Sn",14,5],["I",17,5],["57-71",3,6],["Ag",11,5]
+    ["Es",14,10],["Pb",14,6],["Hg",12,6],["Sn",14,5],["I",17,5],["57-71",3,6],["Ag",11,5],["Au",11,6],["Sb",15,5],["W",6,6],["No",17,10]
     // Tambahkan elemen lainnya jika diperlukan
 ];
 ?>
@@ -23,16 +23,17 @@ $elements = [
             border-collapse: collapse;
             width: 100%;
             text-align: center;
+            background-color: black;
+            color: aqua;
         }
         td {
             width: 50px;
             height: 50px;
-            border: 1px solid black;
+            border: 1px solid aqua;
         }
     </style>
 </head>
 <body>
-    <h2>Chemistry Table Simple</h2>
     <table>
         <?php for ($row = 1; $row <= 10; $row++): ?>
             <tr>
