@@ -130,20 +130,32 @@ $elements = [
     <title>Chemistry Table Simple</title>
     <link rel="icon" href="./Lemrusli-removebg-preview.png" type="image/x-icon">
     <style>
-        table {
-            border-collapse: collapse;
-            width: 100%;
-            text-align: center;
-            background-color: black;
-            color: aqua;
-            font-family: "Source Code Pro", serif;
-        }
-        td {
-            width: 50px;
-            height: 50px;
-            border: 1px solid aqua;
-        }
-    </style>
+    table {
+        border-collapse: collapse;
+        width: 100%;
+        text-align: center;
+        background-color: black;
+        color: aqua;
+        font-family: "Source Code Pro", serif;
+    }
+    td {
+        width: 50px;
+        height: 50px;
+        border: 2px solid; /* Bolding border */
+    }
+
+    /* Rainbow colors off rows */
+    tr:nth-child(1) td { border-color: rgb(255, 0, 0); color:  rgb(255, 0, 0); } /* Red */
+    tr:nth-child(2) td { border-color: rgb(255, 127, 0); color: rgb(255, 127, 0); } /* Orange */
+    tr:nth-child(3) td { border-color: rgb(255, 255, 0); color: rgb(255, 255, 0); } /* Yellow */
+    tr:nth-child(4) td { border-color: rgb(0, 255, 0); color: rgb(0, 255, 0);} /* Green */
+    tr:nth-child(5) td { border-color: rgb(0, 0, 255); color: rgb(0, 0, 255);} /* Blue */
+    tr:nth-child(6) td { border-color: rgb(75, 0, 130); color: rgb(75, 0, 130);} /* Indigo */
+    tr:nth-child(7) td { border-color: rgb(143, 0, 255); color: rgb(143, 0, 255);} /* Ungu */
+    tr:nth-child(8) td { border-color: rgb(255, 0, 127); color: rgb(255, 0, 127);} /* Pink */
+    tr:nth-child(9) td { border-color: rgb(255, 69, 0); color: rgb(255, 69, 0);} /* Dark Orange */
+    tr:nth-child(10) td { border-color: rgb(0, 255, 127); color: rgb(0, 255, 127);} /* Green Light */
+</style>
 </head>
 <body>
     <table>
